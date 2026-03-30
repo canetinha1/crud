@@ -4,9 +4,9 @@ $usuario = "root";
 $senha = "";
 $banco = "crud_produtos";
 
-$conexao = new mysqli($servidor, $usuario, $senha, $banco);
+$conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
 
-if(!$conexao){    
-    die("Erro de conexao: ".mysqli_connect_error());
+if(!$conexao){
+    die("Erro de conexão: ".mysqli_connect_error());
 }
 ?>
